@@ -1,0 +1,9 @@
+title: Effect Forge
+description: Make and export GPU generated sprite effects with Fluid and Volumetric tools.
+remote_theme: just-the-docs/just-the-docs
+plugins: [jekyll-remote-theme]
+search_enabled: true
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
