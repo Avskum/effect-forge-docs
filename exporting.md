@@ -47,10 +47,16 @@ The following button text and available tooltips come from the workspace toolbar
 
 ## Reporting GPU problems
 
-The app logs GPU adapter information and diagnostics to `user://logs/godot.log`, unless a different log file is requested. A typical Linux path is `~/.local/share/godot/app_userdata/effect-forge/logs/godot.log`; on Windows, look under `%APPDATA%\Godot\app_userdata\effect-forge\logs\godot.log`. The startup GPU line also prints the actual log path for that machine.
+The app logs GPU adapter information and diagnostics to `user://logs/effect-forge.log`, unless a different log file is requested. A typical Linux path is `~/.local/share/effect-forge/logs/effect-forge.log`; on Windows, look under `%APPDATA%\effect-forge\logs\effect-forge.log`. The startup GPU line also prints the actual log path for that machine.
+
+Older logs and window-layout settings are not migrated automatically. Linux follows `XDG_DATA_HOME` when set.
 
 Include that log when reporting a GPU problem. A `NONFINITE` line means a simulation texture contains NaN or infinity values; the app then turns on detailed tracing for the rest of the session. A `SLOW` line means a GPU submission took more than 500 ms, close enough to the Windows driver reset threshold to warrant investigation.
 
 For more detail from the start, launch the source app with `./scripts/run.sh -- --gpu-debug`. This logs individual dispatches and checks bound textures after each one, so it runs slowly. The same mode can be enabled with `EFFECT_FORGE_GPU_DEBUG=1`.
 
 Godot's own engine option `--gpu-validation` enables Vulkan validation layers. It requires the Vulkan SDK on Windows or `vulkan-validation-layers` on Linux; launch the source app with `./scripts/run.sh --gpu-validation`, the Windows export with `effect-forge.exe --gpu-validation`, or the Linux export with `./effect-forge.x86_64 --gpu-validation` when you need engine-level diagnostics.
+
+## GIF encoder requirement
+
+GIF export needs ImageMagick’s `magick` command. Native Windows GIF export is not yet verified. Under Proton, the Windows app may fail to start the encoder; use PNG spritesheets if GIF export fails.

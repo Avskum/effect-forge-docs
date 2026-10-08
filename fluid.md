@@ -7,6 +7,20 @@ nav_order: 4
 
 Choose a fluid preset to start. Controls appear according to render mode and the active Water or Lava setup; Pixel fire mode bypasses the fluid solver and shows the Fire controls.
 
+## Fluid examples in motion
+
+<img src="{{ '/assets/gifs/blood-splatter.gif' | relative_url }}" alt="A red fluid splatter spreads into irregular droplets" width="256" height="256" loading="lazy">
+
+*Blood splatter: control the emitter shape, color, timing, and forces.*
+
+<img src="{{ '/assets/gifs/water-crown.gif' | relative_url }}" alt="A water crown splashes outward and falls" width="256" height="256" loading="lazy">
+
+*Water crown: dedicated water shading adds tint, highlights, and distortion.*
+
+<img src="{{ '/assets/gifs/pixel-fire.gif' | relative_url }}" alt="Pixel-art fire loops with editable warm color bands" width="256" height="256" loading="lazy">
+
+*Pixel Fire: procedural flames with editable palette bands and pixel scale.*
+
 ## Simulation
 
 | Control | Inspector hint |

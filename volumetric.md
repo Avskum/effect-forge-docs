@@ -10,6 +10,24 @@ Open a `vol_*.json` preset or choose one in the toolbar. Inspector controls appe
 ![Volumetric campfire in the editor with Simulation controls and timeline visible](assets/images/ui/vol_overview.png)
 *The Volumetric workspace shows Simulation controls beside the preview, with animation tracks below.*
 
+## Volumetric examples in motion
+
+<img src="{{ '/assets/gifs/volumetric-explosion.gif' | relative_url }}" alt="A volumetric explosion grows from a fireball into smoke" width="256" height="256" loading="lazy">
+
+*Explosion: shape the blast, combustion, smoke, and lighting.*
+
+<img src="{{ '/assets/gifs/muzzle-flash.gif' | relative_url }}" alt="A brief rifle muzzle flash spreads into a shaped burst" width="256" height="256" loading="lazy">
+
+*Rifle muzzle flash: the weapon presets also include handgun, repeating machine-gun, and rocket effects.*
+
+<img src="{{ '/assets/gifs/campfire.gif' | relative_url }}" alt="A sustained volumetric campfire curls and flickers" width="256" height="256" loading="lazy">
+
+*Campfire: tune a continuous flame with fuel, temperature, vorticity, and fire-color gradients.*
+
+<img src="{{ '/assets/gifs/smoke-plume.gif' | relative_url }}" alt="A volumetric smoke plume rises and curls" width="256" height="256" loading="lazy">
+
+*Smoke plume: tune density, dissipation, color, and lighting independently from fire.*
+
 ## Simulation
 
 | Control | Inspector hint |

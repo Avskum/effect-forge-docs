@@ -1,28 +1,49 @@
 ---
-title: index
+title: EffectForge
 nav_order: 1
 ---
 
-# Effect Forge
+# EffectForge
 
-Effect Forge is a Godot 4 sprite effect generator. **Fluid** makes 2D liquid and fire effects, including procedural pixel fire. **Volumetric** simulates 3D fire, smoke and explosions, then renders them as 2D sprites or exports the volume. **Sprite FX** is coming soon in the workspace.
+Create animated effects, preview them live, and export them to your game. **Fluid** makes 2D fire, smoke, liquids, and procedural pixel fire. **Volumetric** simulates 3D fire, smoke, explosions, and weapon bursts, then exports camera views as sprites or the simulation as a volume.
 
-Start with [Getting started](getting-started.md), then explore [Fluid](fluid.md), [Volumetric](volumetric.md), and [Exporting](exporting.md).
+[Download the beta on itch.io](https://avskum.itch.io/effectforge){: .btn .btn-primary }
+[Getting started]({{ '/getting-started.html' | relative_url }}){: .btn }
 
-## A quick visual tour
+Explore [Fluid]({{ '/fluid.html' | relative_url }}), [Volumetric]({{ '/volumetric.html' | relative_url }}), and [Exporting]({{ '/exporting.html' | relative_url }}) for the controls and workflow. Sprite FX is temporarily hidden in the current beta.
 
-![Water crown splash](assets/images/02-water-crown-splash.png)
+## See the effects in motion
 
-Fluid can make water splashes; the Water tab controls its tint, distortion and highlights.
+These GIFs are actual EffectForge exports. Start from a preset, change the controls, and export your own variation.
 
-![Pixel fire editor](assets/images/06-pixel-fire-editor.png)
+### Volumetric fire and explosions
 
-Pixel fire has its own shape controls and editable colour bands.
+<img src="{{ '/assets/gifs/volumetric-explosion.gif' | relative_url }}" alt="An animated volumetric fireball expands and fades into smoke" width="256" height="256" loading="lazy">
 
-![Explosion fireball](assets/images/03-explosion-fireball.png)
+Shape the burst with 3D emitters, fuel, blast pressure, curl noise, and lighting. Export a PNG spritesheet, GIF, volume atlas, or OpenVDB sequence. [Explore Volumetric]({{ '/volumetric.html' | relative_url }}).
 
-Volumetric emitters, combustion and rendering shape an explosion.
+### Weapon bursts
 
-![Smoke plume](assets/images/04-smoke-plume.png)
+<img src="{{ '/assets/gifs/muzzle-flash.gif' | relative_url }}" alt="A brief rifle muzzle flash spreads into a shaped burst and fades" width="256" height="256" loading="lazy">
 
-The Smoke tab controls the plume's lifetime, colour, density and lighting response.
+The weapon presets include rifle and handgun muzzle flashes, a repeating machine-gun flash, and rocket backblast with sparks.
+
+![Rifle muzzle flash in the editor with 3D emitter controls and the animation timeline](assets/images/ui/vol_muzzle_emitters.png)
+
+### Stylized water
+
+<img src="{{ '/assets/gifs/water-crown.gif' | relative_url }}" alt="A stylized water crown splashes outward and falls" width="256" height="256" loading="lazy">
+
+Tune the water tint, distortion, highlights, and emission timing. Fluid also includes blood, dust, smoke, slime, honey, and lava presets. [Explore Fluid]({{ '/fluid.html' | relative_url }}).
+
+### Pixel-art fire
+
+<img src="{{ '/assets/gifs/pixel-fire.gif' | relative_url }}" alt="Looping pixel-art flames flicker through warm palette bands" width="256" height="256" loading="lazy">
+
+Build a looping flame with editable palette bands, source shapes, and pixel scale, then export it as a spritesheet or GIF.
+
+## October 8 beta update
+
+The update adds weapon effects, more emitter shapes, richer fire and smoke shading, render-time detail, sharper previews, and undo/redo. [Getting started]({{ '/getting-started.html' | relative_url }}) explains navigation and shortcuts; [Exporting]({{ '/exporting.html' | relative_url }}) covers formats and GPU problem reports.
+
+Windows and Linux downloads are available. A Vulkan-capable GPU is required. Native Windows testing is still needed; GIF export requires ImageMagick.

@@ -1,4 +1,4 @@
-title: Effect Forge
+title: EffectForge
 description: Make and export GPU generated sprite effects with Fluid and Volumetric tools.
 remote_theme: just-the-docs/just-the-docs
 plugins: [jekyll-remote-theme]
@@ -7,3 +7,8 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+url: https://avskum.github.io
+baseurl: /effect-forge-docs
+aux_links:
+  Download beta: https://avskum.itch.io/effectforge
